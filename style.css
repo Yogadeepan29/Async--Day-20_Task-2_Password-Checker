@@ -1,0 +1,176 @@
+/* <--------------------------- scroll & fonts ---------------------------> */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+/* <--------------------------- Navbar section ---------------------------> */
+
+header {
+  background-color: black;
+  padding: 0.5rem;
+}
+.logo {
+  margin-left: -30px;
+}
+.nav-item {
+  margin-right: 30px;
+}
+.nav-link {
+  border-radius: 15px;
+  letter-spacing: 1px;
+  border: 1px solid black !important;
+}
+.nav-link:hover {
+  background-color: rgb(68, 68, 68) !important;
+}
+.nav-link.active {
+  background-color: #444;
+  border-radius: 15px;
+}
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  transform: translateY(-50%);
+  flex: 1;
+  text-align: center;
+}
+.navbar-nav {
+  margin-left: auto;
+}
+.navbar-toggler-icon {
+  filter: invert(1);
+  margin-left: auto;
+}
+#navbar {
+  transition: transform 0.3s ease-in-out;
+}
+#navbar.hide {
+  transform: translateY(-100%);
+}
+
+/* <--------------------------- Banner section ---------------------------> */
+
+.lhs {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  padding-top: 4%;
+  padding-bottom: 10%;
+}
+.title {
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: auto;
+  font-family: "lora", serif;
+}
+.form-control {
+  height: 50px;
+  padding-left: 20px !important;
+  padding-bottom: 15px !important;
+  letter-spacing: 1px;
+  border-top-left-radius: 25px !important;
+  border-bottom-left-radius: 25px !important;
+}
+::-webkit-input-placeholder {
+  font-weight: 100;
+  font-size: smaller;
+}
+.btn {
+  border-top-right-radius: 25px !important;
+  border-bottom-right-radius: 25px !important;
+}
+.btn:hover {
+  font-weight: 450;
+  box-shadow: 0px 0px 25px 12px rgba(255, 255, 255, 0.295),
+    0 17px 50px 0 rgba(255, 251, 251, 0.116);
+}
+a {
+  text-decoration: none !important;
+  font-weight: 500;
+}
+.rhs {
+  background-color: black;
+  width: 100%;
+}
+#gif {
+  max-width: 600px;
+  min-width: 400px !important;
+}
+.re-size {
+  max-width: 400px !important;
+}
+.fade-in {
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.img-fluid {
+  position: relative;
+}
+img {
+  user-select: none;
+}
+ul {
+  list-style-type: square;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.section-title {
+  padding: 20px;
+}
+.section-title::before {
+  content: "»";
+  margin-right: 10px;
+}
+.points {
+  margin-left: 40px;
+  font-size: larger;
+}
+/* <--------------------------- Pagination ---------------------------> */
+
+#his {
+  background-color: black;
+  color: white;
+}
+.pagination .page-link {
+  user-select: none;
+}
+.pagination .page-item.active .page-link {
+  background-color: #333;
+  border-color: white;
+  color: #fff;
+}
+.pagination .page-item:hover .page-link {
+  background-color: rgb(68, 68, 68);
+  border-color: black;
+  color: rgb(255, 255, 255);
+}
+.page-item .page-link {
+  color: black;
+  border-color: black;
+}
+.pagination {
+  flex-wrap: wrap;
+}
+
+/* <--------------------------- Footer ---------------------------> */
+
+.footer {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+  bottom: 0;
+}
+.footer-content {
+  max-width: 800px;
+  margin: auto;
+}
