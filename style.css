@@ -109,8 +109,7 @@
 }
 
 .gif {
-  max-width: 600px;
-  min-width: 350px !important;
+  max-width: 600px ;
   user-select: none;
 }
 
@@ -138,8 +137,11 @@
 .img-fluid {
   position: relative;
   width: 100%;
-  max-width: 150px !important;
   user-select: none;
+}
+
+.domains{
+  max-width: 150px !important;
 }
 
 .wave {

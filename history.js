@@ -72,7 +72,7 @@ fetch("https://haveibeenpwned.com/api/v3/breaches")
         html += `
           <div class="row">
             <div class="col-sm-2 my-auto text-center">
-              <img class="img-fluid mb-3" src="${
+              <img class="domains img-fluid mb-3" src="${
                 item.LogoPath
               }" draggable="false" alt="${item.Title}">
             </div>
