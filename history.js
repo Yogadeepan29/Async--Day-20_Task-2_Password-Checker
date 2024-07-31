@@ -72,7 +72,7 @@ fetch("https://haveibeenpwned.com/api/v3/breaches")
         html += `
           <div class="row">
             <div class="col-sm-2 my-auto text-center">
-              <img class="logo img-fluid" height="75px" width="100px" src="${
+              <img class="img-fluid mb-3" src="${
                 item.LogoPath
               }" draggable="false" alt="${item.Title}">
             </div>
@@ -83,7 +83,7 @@ fetch("https://haveibeenpwned.com/api/v3/breaches")
               <br>
               <br>
           
-              <p>${item.Description}</p>
+              <p class="a">${item.Description}</p>
               <p>
                 <strong>Breach date :</strong>
                 ${item.BreachDate}
@@ -113,7 +113,7 @@ fetch("https://haveibeenpwned.com/api/v3/breaches")
       let html = `
     <ul class="pagination justify-content-center justify-content-sm-between">
       <li class="page-item ${currentPage === 1 ? "disabled" : ""}">
-        <a class="page-link" href="#" onclick="changePage(event, ${
+        <a class="a page-link" href="#" onclick="changePage(event, ${
           currentPage - 1
         })"><span aria-hidden="true">&laquo</span></a>
       </li>
@@ -122,14 +122,14 @@ fetch("https://haveibeenpwned.com/api/v3/breaches")
       for (let i = 1; i <= totalPages; i++) {
         html += `
       <li class="page-item ${i === currentPage ? "active" : ""}">
-        <a class="page-link" href="#" onclick="changePage(event, ${i})">${i}</a>
+        <a class="a page-link" href="#" onclick="changePage(event, ${i})">${i}</a>
       </li>
     `;
       }
 
       html += `
       <li class="page-item ${currentPage === totalPages ? "disabled" : ""}">
-        <a class="page-link" href="#" onclick="changePage(event, ${
+        <a class="a page-link" href="#" onclick="changePage(event, ${
           currentPage + 1
         })"><span aria-hidden="true">&raquo</span></a>
       </li>
@@ -145,12 +145,12 @@ fetch("https://haveibeenpwned.com/api/v3/breaches")
       let html = `
 <ul class="pagination justify-content-center justify-content-sm-between">
   <li class="page-item ${currentPage === 1 ? "disabled" : ""}">
-    <a class="page-link" href="#" onclick="changePage(event, ${
+    <a class="a page-link" href="#" onclick="changePage(event, ${
       currentPage - 1
     })">Previous</a>
   </li>
   <li class="page-item ${currentPage === totalPages ? "disabled" : ""}">
-    <a class="page-link" href="#" onclick="changePage(event, ${
+    <a class="a page-link" href="#" onclick="changePage(event, ${
       currentPage + 1
     })">Next</a>
   </li>

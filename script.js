@@ -60,14 +60,17 @@ fetch("https://haveibeenpwned.com/api/v3/latestbreach")
   <h4 class="mb-5">Stay informed about the latest data breaches.</h4>
 
   <div class="col-sm-2 text-center my-auto ">
-  <img class="img-fluid"  src="${data.LogoPath}" draggable="false" alt="${data.Title}">
+    <div class="image-container">
+      <img class="img-fluid"  src="${data.LogoPath}" draggable="false" alt="${data.Title}">
+      </div>
   </div>
+
   <div class="col-sm-10">
   <h2 class="text-center text-sm-start">${data.Name}</h2>   
   <strong>( Last Updated On ) :</strong>
   ${formattedDate}
   <hr>
-  <p>${data.Description}</p>
+  <p class="a">${data.Description}</p>
   <p>
   <strong>Breach date :</strong>
   ${data.BreachDate}
